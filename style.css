@@ -1,0 +1,550 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", serif;
+}
+
+body {
+    background-color: #303030;
+    color: white
+}
+
+.location {
+    color: #909090;
+    font-size: 1.1em;
+}
+
+.profile {
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center -10px;
+    width: 350px;
+    height: 350px;
+    margin-bottom: 20px;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    scroll-snap-align: start;
+    position: relative;
+}
+
+.container{
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+    z-index: 1;
+    max-width: 100%;
+}
+
+.center {
+    margin: auto;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 4em;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 5em;
+}
+
+h3 {
+    margin-top: 0px;
+    font-size: 1.5em;
+}
+
+.school {
+    margin-bottom: 10px;
+}
+
+.school2 {
+    margin-bottom: 10px;
+}
+
+.text {
+    font-size: 1.5em;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.text2 {
+    font-size: 1.2em;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.text3 {
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.date {
+    color: white;
+    margin-top: 5px;
+    font-size: 1.5em;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.background-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(8px) brightness(60%);
+}
+
+.name {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.signature {
+    width: 200px;
+    margin-top: 20px;
+    margin-bottom: 0 !important;
+    filter: invert(1);
+    font-size: 1.5em;
+}
+
+.google-logo {
+    width: 200px;
+    margin-top: 20px;
+    margin-bottom: 0 !important;
+}
+
+.alphabet-logo {
+    width: 200px;
+    margin-top: 20px;
+    margin-bottom: 0 !important;
+}
+
+.android-logo {
+    width: 200px;
+    margin-top: 20px;
+    margin-bottom: 5px !important;
+}
+
+.stanford-logo {
+    width: 300px;
+    margin-top: 20px;
+    margin-bottom: 5px !important;
+}
+
+.kharagpur-logo {
+    width: 400px;
+    margin-bottom: 5px !important;
+}
+
+.qualites li {
+    font-size: 1.5em;
+}
+
+.qualites ul{
+    margin-top: -30px;
+}
+
+.footer a, p, span {
+    color: white;
+    text-decoration: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer {
+    font-size: 0.7em;
+}
+
+footer p {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+footer {
+    position: fixed;
+    margin-bottom: 0;
+    bottom: 1%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: fit-content;
+    background-color: rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 10px;
+} 
+
+header .material-icons {
+    display: none;
+}
+
+header {
+    font-family: "Roboto Condensed", sans-serif;
+    text-transform: uppercase;
+    position: fixed;
+    top: 1%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: fit-content;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #909090;
+}
+
+.contact a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    align-items: center;
+    text-align: center;
+}
+
+.competences {
+    margin-top: 100px;
+}
+
+.kenzo {
+    pointer-events: none;
+}
+
+.kenzo:hover {
+    color: #007bff;
+    transition: 1s;
+}
+
+/* Animation de rebond */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+}
+
+/* Style de la flèche */
+.section-arrow {
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    cursor: pointer;
+    text-align: center;
+    z-index: 10;
+    width: fit-content;
+}
+
+.section-arrow .material-icons {
+    color: white;
+    font-size: 2rem;
+    animation: bounce 2s infinite;
+    display: inline-block;
+}
+
+@media (max-width: 750px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .profile {
+        width: 200px;
+        height: 200px;
+    }
+
+    nav ul {
+        flex-direction: row;
+        align-items: center;
+        padding: 10px;
+    }
+
+    footer p {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    footer {
+        position: fixed;
+        width: fit-content;
+        margin-top: 20px;
+        bottom: 1%;
+    }
+
+    header {
+        position: fixed;
+        width: 95%;
+        margin-bottom: 20px;
+    }
+
+    .background-image img {
+        filter: blur(8px) brightness(60%);
+    }
+
+    .signature, .google-logo, .alphabet-logo, .android-logo, .stanford-logo {
+        width: 150px;
+    }
+
+    .kharagpur-logo {
+        width: 200px;
+        margin-bottom: 10px !important;
+    }
+
+    nav a .material-icons {
+        display: inline-block;
+        font-size: 1.5em;
+    }
+
+    nav a span {
+        display: none;
+    }
+
+    nav ul {
+        padding: 10px;
+        flex-wrap: nowrap;
+    }
+
+
+    nav li {
+        flex-direction: row;
+        margin: 5px;
+        padding: 5px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .qualites li {
+        font-size: 1.1em;
+    }
+
+    .text {
+        font-size: 1em;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+
+    .text2 {
+        font-size: 1em;
+        margin-top: 5px;
+        margin-bottom: 0px;
+    }
+
+    .school {
+        font-size: 1em;
+    }
+
+    .school2 {
+        margin-top: -5px;
+        font-size: 1em;
+    }
+
+    .qualites ul{
+        margin-top: 20px;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    h2 {
+        margin-bottom: 0;
+    }
+
+    .date {
+        font-size: 1em;
+    }
+
+    .location {
+        font-size: 1em;
+    }
+
+    .footer a, p, span {
+        color: white;
+        text-decoration: none;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .section-arrow {
+        position: absolute;
+        bottom: 7.5rem;
+        z-index: 1;
+        /* animation: bounce 3s ease-in-out infinite; */
+    }
+    .qualites-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        margin-top: 1rem;
+    }
+    
+    .qualites-item h2 {
+        font-size: 1.5em;
+        margin-bottom: 1rem;
+    }
+
+    .section-arrow {
+        bottom: 8em;
+    }
+    
+    .section-arrow .material-icons {
+        font-size: 1.8rem;
+    }
+}
+
+.experiences-grid, .formation-grid, .qualites-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.experience-item, .formation-item, .qualites-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.qualites-item h2 {
+    margin-bottom: 50px;
+    font-size: 4em;
+    text-transform: uppercase;
+}
+
+.qualites-item ul {
+    margin: 0;
+    padding: 0;
+}
+
+.qualites-item li {
+    margin-bottom: 1rem;
+    font-size: 1em;
+}
+
+@media (max-width: 750px) {
+    .experiences-grid, .formation-grid, .qualites-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .qualites-item h2 {
+        font-size: 1.5em;
+        margin-bottom: 1rem;
+    }
+}
+
+.contact {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-items {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.contact-item {
+    margin: 0;
+    padding: 15px 30px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    min-width: 250px;
+}
+
+.contact-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-3px);
+}
+
+.contact .text3 {
+    color: #fff;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.contact .location {
+    color: #909090;
+    transition: color 0.3s ease;
+}
+
+.contact-item:hover .location {
+    color: #fff;
+}
+
+@media (max-width: 750px) {
+    .contact-items {
+        flex-direction: column;
+        width: fit-content;
+        padding: 0 20px;
+    }
+    
+    .contact-item {
+        margin: 10px 0;
+        padding: 10px 20px;
+        width: 100%;
+    }
+}
